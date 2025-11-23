@@ -12,15 +12,16 @@ namespace AI{
 string set(string a,string b){
 	return "pinMode("+a+","+b+");";
 }
-string addn(string b[200],int a){
+string addn(string b[],int a){
 	string d;
 	for(int c=0;c<=a;c++){
 		if(c!=a){
-			d=b[c]+"    \n";
+			d+=b[c]+"    \n";
 		}else{
-			d=b[c];
+			d+=b[c];
 		}
 	}
+	cout<<d;
 	return d;
 }
 class loop{
