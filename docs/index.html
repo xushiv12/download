@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>泥土世界｜离线版下载</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #29251e;
+      background: #f4f1e8;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: #6b665c;
+      line-height: 1.7;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.5fr);
+      gap: 32px;
+      padding: 30px;
+      background: #fff;
+      border: 1px solid #e5dfd1;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px #382b1210;
+    }
+
+    .download-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 24px;
+      background: #faf6e9;
+      border-radius: 14px;
+    }
+
+    .download-panel h2,
+    .description h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+
+    .download-panel p {
+      margin: 0 0 20px;
+      color: #625b4e;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 18px;
+      border-radius: 9px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .play-button {
+      background: #39734a;
+    }
+
+    .play-button:hover {
+      background: #2c5c3a;
+    }
+
+    .download-button {
+      background: #b77822;
+    }
+
+    .download-button:hover {
+      background: #945c16;
+    }
+
+    .filename {
+      margin-top: 12px;
+      color: #777064;
+      font-size: 14px;
+    }
+
+    .description p {
+      line-height: 1.8;
+    }
+
+    .description ul {
+      padding-left: 22px;
+      line-height: 1.85;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 12px 15px;
+      color: #5c5548;
+      background: #f7f5ef;
+      border-radius: 9px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 22px 14px;
+      }
+
+      .card {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1>泥土世界：Boss 冒险</h1>
+    <p class="subtitle">在线试玩，或下载离线版 HTML 在本地游玩。</p>
+
+    <section class="card">
+      <div class="download-panel">
+        <h2>开始游戏</h2>
+        <p>可以直接在线试玩，也可以下载游戏文件到设备后用浏览器打开。</p>
+
+        <div class="buttons">
+          <!-- 直接打开网站上的游戏，不触发下载 -->
+          <a class="button play-button" href="/gv.html">在线试玩</a>
+
+          <!-- 下载网站上的游戏文件，并将下载文件命名为 boss.html -->
+          <a
+            class="button download-button"
+            href="/gv.html"
+            download="boss.html"
+          >
+            下载离线版
+          </a>
+        </div>
+
+        <div class="filename">下载后的文件名：boss.html</div>
+      </div>
+
+      <div class="description">
+        <h2>游戏介绍</h2>
+
+        <p>
+          这是一个第一人称方块冒险游戏。玩家可以在泥土世界中探索、挖掘和放置方块，
+          收集物品，并逐步挑战不同的 Boss。游戏还包含沙子世界、背包、存档和模组导入等内容。
+        </p>
+
+        <ul>
+          <li>
+            <strong>探索与建造：</strong>
+            在泥土世界和沙子世界中移动、挖掘方块、收集掉落物，并使用背包中的方块进行放置。
+          </li>
+          <li>
+            <strong>Boss 挑战：</strong>
+            挑战 The Untistered、Witch、The Usty、Golden 和末影怪人等 Boss，逐步推进挑战路线。
+          </li>
+          <li>
+            <strong>Witch 与青蛙状态：</strong>
+            Witch 可以把玩家变成青蛙。使用变回台可以恢复成人形态；青蛙状态会改变跳跃和观察世界的体验。
+          </li>
+          <li>
+            <strong>存档与分享：</strong>
+            可以导出、导入可读的文本格式存档，记录出生点、两个世界的方块、生物和背包物品，也可以用文本文档查看或编辑。
+          </li>
+          <li>
+            <strong>模组导入：</strong>
+            可以导入符合格式的“.话梅”模组，添加自定义方块生物，并设置名称、生命值、外观颜色、攻击方式、召唤材料和掉落物品。
+          </li>
+          <li>
+            <strong>铁轨与矿车：</strong>
+            背包第四页提供铁轨和蓝色方块形矿车。矿车只能放在带有铁轨纹理的方块上。
+            还可以分别为矿车的上、下、左、右、前、后六个面上传 PNG 图片来自定义外观；
+            没有选择图片的面会保持蓝色。
+          </li>
+          <li>
+            <strong>矿车驾驶：</strong>
+            坐上矿车后，游戏页面会切换为驾驶页面，分为前视窗、后视镜画面和控制台。
+            在控制台按住“往前”或“往后”按钮即可持续行驶，松开按钮就会停车；按 9 下车。
+          </li>
+          <li>
+            <strong>电脑与手机版控制：</strong>
+            可以切换电脑或手机版控制模式。电脑版使用键盘控制；手机版会显示屏幕方向按钮和跳跃按钮。
+          </li>
+        </ul>
+
+        <div class="note">
+          离线版下载后是一个 HTML 文件。存档和模组文件需要由玩家另行导入。
+          我的网站提供了两个示例文件，可以下载 <code>x.话梅</code> 模组和
+          <code>xushi.dwsave</code> 存档。
+          要查找我的 GitHub 仓库，请在 GitHub 搜索
+          <code>xushiv12/download</code>。
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
